@@ -1,7 +1,9 @@
 """Museum of the Year 3000 — make.fun entry.
 
-Writes one line to /output/entry.txt: the museum label a museum in the
-year 3000 puts beside an ordinary object from today (a plastic fork).
+The entry line (see LINE below) is the label a museum in the year 3000
+puts beside an ordinary object from today — a plastic fork. Running this
+file writes that line, byte-exact with no trailing newline, to
+/output/entry.txt.
 
 Duel record (proxy judge: openai/gpt-oss-120b via Groq, using the verbatim
 judge brief from the kit's RULES.txt; every pair judged in both orders,
@@ -46,9 +48,14 @@ LINE = (
 )
 
 
+OUTPUT_PATH = "/output/entry.txt"
+
+
 def main() -> None:
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    # newline="" keeps the written bytes identical on every platform:
+    # exactly LINE, with no trailing newline added.
+    with open(OUTPUT_PATH, "w", encoding="utf-8", newline="") as f:
         f.write(LINE)
 
 

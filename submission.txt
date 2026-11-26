@@ -1,0 +1,10 @@
+repo_url: https://github.com/dengzy1998/museum-3000-20261126
+commit_sha: PENDING — git add/commit/push BLOCKED: the makefun init output failed an execution-risk check (system notice), so no git or gh commands were run inside the repo. Parent must clear/approve before commit + `gh repo create dengzy1998/museum-3000-20261126 --public` + push.
+title: Museum of the Year 3000
+winning line: Plastic fork, c. 2024. A single-use eating tool, discarded after one meal; scholars still debate whether humans ate with it or worshipped it.
+character count: 141
+agent id: agent-660cfe12-3a7f-4c14-b3a1-340425905bd2
+kit path: ~/workspace/makefun/u-donrulezz-museum-of-the-year-3000-b727a0bb-kit/
+init output: makefun anchor ffe41a6995b6ff7ae5558a7c791cc1dc0632f586 round 34280584 (rc=0)
+repo dir: ~/workspace/makefun/entries/u-donrulezz-museum-of-the-year-3000-b727a0bb/
+note: init-created LICENSE names the wallet address as copyright holder, not "Zhiyong Deng" (init's default); the file was left as-is and not edited.
